@@ -29,7 +29,7 @@ int main()
     }
     else
     {
-        printf("You entered an Odd Int");
+        inputOne = inputOne + 1;
     }
     return 1;
 }
