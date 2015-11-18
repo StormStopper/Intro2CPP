@@ -17,11 +17,14 @@ int main()
     cin >> inputOne;
     cout << "Enter an Int" << endl;
     cin >> inputTwo;
-    if (inputOne % 2 == 0)
+    if (inputOne % 2  == 0)
     {
         while (inputOne < inputTwo)
         {
             final = inputOne + 2;
+            inputOne = final;
+            final = final + final;
+            cout << final << endl;
         }
     }
     else
