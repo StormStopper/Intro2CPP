@@ -28,4 +28,5 @@ int main()
     {
         printf("You entered an Odd Int");
     }
+    return 0;
 }
