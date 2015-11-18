@@ -19,7 +19,7 @@ int main()
     cin >> inputTwo;
     if (inputOne % 2  == 0)
     {
-        while (inputOne < inputTwo)
+        while (inputOne < inputTwo)//outputting 16
         {
             final = inputOne + 2;
             inputOne = final;
@@ -31,5 +31,5 @@ int main()
     {
         printf("You entered an Odd Int");
     }
-    return 0;
+    return 1;
 }
