@@ -12,7 +12,7 @@ int main()
 {
     int inputOne = 0;
     int inputTwo = 0;
-    
+    int final;
     cout << "Enter an Even Int" << endl;
     cin >> inputOne;
     cout << "Enter an Int" << endl;
@@ -21,7 +21,7 @@ int main()
     {
         while (inputOne < inputTwo)
         {
-            
+            final = inputOne + 2;
         }
     }
     else
