@@ -13,7 +13,7 @@ int main()
     cin >> inputTwo;
     if (inputOne % 2  == 0)
     {
-        for (inputOne <= inputTwo; inputOne + 2)
+		for (; inputOne <= inputTwo; inputOne + 2)
         {
             final += inputOne;
         }
