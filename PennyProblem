@@ -1,0 +1,86 @@
+/*
+ * File:   main.cpp
+ * Author: Jackson
+ *
+ * Created on October 16, 2015, 5:06 PM
+ */
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <stdio.h>
+#include <cstring>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    float payed = 0.0;
+    float owed = 0.0;
+    int dollars;
+    int quarter;
+    int dime;
+    int nickel;
+    int penny;
+    float change;
+    cout << "Total is ";
+    cin >> owed;
+    cout << "How much did the customer pay? ";
+    cin >> payed;
+    change = payed - owed;
+    printf("Change %.2f \n", change);
+    dollars = change/1;
+    change = change - dollars;//new change minus dollars
+    quarter = change /.25;
+    change = change - quarter * .25;//new change minus quarters
+    dime = change /.10;
+    change = change - dime *.10;//new change minus dime
+    nickel = change /.05;
+    change = change - nickel * .05;//new change minus nickels
+    penny = change /.01;
+    change = change- penny * 0.01; // New change minus penny
+    //cout << "Pennies " << penny << endl;
+    //cout << "Change" << change << endl;
+    //dollars = change/1;
+    if(dollars >= 0)
+    {
+    	cout << "Dollars due " << dollars << endl;
+    }
+    //change = change - dollars;
+    //quarter = change/.25;
+    if(quarter >= 0.25)
+    {
+        cout << "Quarters due " << quarter << endl;
+    }
+    //change = change - quarter;
+    //dime = change/.10;
+    if(dime >= 0.10)
+    {
+        cout << "Dimes due " << dime << endl;
+    }
+    //change = change - dime;
+    //nickel = change/.05;
+    if(nickel >= 0.05)
+    {
+        cout << "Nickels Due " << nickel << endl;
+    }
+    // change = change - nickel;
+    //penny = change/.01;
+    if(penny >= 0.01)
+    {
+        //printf("Debug");
+        cout << "Pennies Due " << penny << endl;
+    }
+    else
+    {
+        penny = ceil(change /.01);
+        if(penny >= 0)
+        {
+            cout << "Pennies Due " << penny << endl;
+        }
+    }
+    return 0;
+}
+
+
+
